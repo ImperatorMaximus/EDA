@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	char n[] = "M";
+	char *ap = NULL;
+	ap = n;
+	printf("%p %c", ap, *ap);
+	return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	char n[] = "Max";
+	char *ap = NULL;
+	ap = n;
+	printf("%c cuya direccion es: %p\n", *ap, ap);
+	//ap++;
+	printf("%c cuya direccion es: %p ", *ap, ap);
+	return 0;
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+int main() {
+	int nacci[] = {1, 1, 2, 3, 5, 8, 13};
+	int *ap = NULL;
+	ap = nacci;
+	printf("%c cuya direccion es: %p\n", *ap, ap);
+	ap = ap + 3;
+	printf("%c cuya direccion es: %p ", *ap, ap);
+	return 0;
+}#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	char n[] = "Max";
+	char *ap = NULL;
+	ap = n;
+	printf("%c cuya direccion es: %p\n", *ap, ap);
+	//ap = ap +2;
+	printf("%c cuya direccion es: %p ", *ap, ap);
+	return 0;
+}
