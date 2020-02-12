@@ -57,3 +57,21 @@ int main() {
 	printf("%c cuya direccion es: %p ", *ap, ap);
 	return 0;
 }
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int nacci[] = {1, 1, 2, 3, 5, 8, 13}, t, i;
+	int *ap = NULL;
+	ap = nacci;
+	t = sizeof(nacci);
+	t=t/sizeof(nacci[0]);
+	
+	for(i=0; i<t; i++){
+		printf("%i - %p\n", *(ap+i), ap+i);
+	}
+	return 0;
+}
