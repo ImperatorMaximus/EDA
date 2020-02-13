@@ -75,3 +75,21 @@ int main() {
 	}
 	return 0;
 }
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	char nacci[] = {'F', 'd', 'I'};
+	int t, i;
+	char *ap = NULL
+	ap = nacci; t = sizeof(nacci);
+	t=t/sizeof(nacci[0]);
+	
+	for(i=0; i<t; i++){
+		printf"%c - %p\n", *(ap+i), ap+i);
+	}
+	return 0;
+}
