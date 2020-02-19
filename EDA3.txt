@@ -1,0 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct soldado{
+	char* rango;
+	int tropa;
+	char* clase;
+	float coordenadas;
+};
+
+typedef struct soldado soldat;
+
+int main() {
+	soldat ryan, perez;
+	ryan.tropa = 28;
+	ryan.rango = "Capitan";
+	ryan.clase = "Caballeria";
+	ryan.coordenadas = 97.6142;
+	
+	perez.tropa = 77;
+	perez.rango = "Mayor";
+	perez.clase = "Paracaidista";
+	perez.coordenadas = 108.8943;
+	
+	printf("%s de clase %s, tropa %i. Punto de encuentro: %f\n", perez.rango, perez.clase, perez.tropa, perez.coordenadas);
+	printf("%s de clase %s, tropa %i. Punto de encuentro: %f", ryan.rango, ryan.clase, ryan.tropa, ryan.coordenadas);
+	
+	return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+	char* rango;
+	int tropa;
+	char* clase;
+	float coordenadas;
+} soldat;
+
+int main() {
+	soldat perez;
+	soldat* ap = NULL;
+	
+	perez.tropa = 77+2;
+	perez.rango = "Mayor";
+	perez.clase = "Paracaidista";
+	perez.coordenadas = 108.8943+2;
+	
+	ap = &perez;
+	
+	ap -> tropa = ap -> tropa + 1;
+	
+	printf("%s de clase %s. Tropa %i. Punto de encuentro: %f\n", perez.rango, perez.clase, ap -> tropa, perez.coordenadas+9);
+	
+	return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct empleado {
+	char *nombre;
+	char *apellido;
+	int edad;
+	char sexo;
+	double salarioph;
+	struct empleado *ptrE;
+};
+
+typedef struct empleado godin;
+
+int main() {
+	godin g1, g2;
+	g1.nombre = "ajrjaeb";
+	g1.edad = 28;
+	g1.sexo = 'M';
+	
+	g2.ptrE = &g1;
+	
+	
+	return 0;
+}
