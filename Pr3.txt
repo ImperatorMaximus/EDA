@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct{
+  int x, y;
+}punto;
+
+typedef struct{
+  punto* puntos;
+}poli;
+
+int main(){
+  poli coor
+  /*coor.puntos
+    poli.puntos = (punto*) malloca((3*sizeof(punto));
+    
+  poli.punto1 = (3,5);
+  poli.punto2 = (6,8);
+  poli.punto2 = (9,7);
+  
+  if(){
+    for(){
+      for(){
+        printf("No introducir dos coordenadas iguales");
+      }
+    }
+  }
+  
+  free malloc;*/
+  
+  return 0;
+}  
